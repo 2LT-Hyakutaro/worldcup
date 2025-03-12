@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+div.confederation {
+    border-style: solid;
+    border-width: thick;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+}
+
+.afc {
+    background-color: #f5c1f2;
+}
+
+.caf {
+    background-color: #ad8e276e;
+}
+.concacaf {
+    background-color: #FFC0C7;
+}
+
+.conmebol {
+    background-color: #33f07b;
+}
+
+.ofc {
+    background-color: #fde578;
+}
+.uefa {
+    background-color: #78b6fd;
+}
