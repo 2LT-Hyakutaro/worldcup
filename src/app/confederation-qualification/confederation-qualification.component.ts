@@ -1,7 +1,7 @@
 import { Component, Input, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatchComponent } from '../match/match.component';
-import { MatchData } from '../match-data';
+import { MatchData } from '../interfaces/match-data';
 
 @Component({
   selector: 'app-confederation-qualification',

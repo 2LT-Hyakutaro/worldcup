@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { QualificationData } from '../qualification-data';
+import { QualificationData } from '../interfaces/qualification-data';
 @Component({
   selector: 'app-qualification',
   imports: [],

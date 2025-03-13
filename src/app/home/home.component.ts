@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { QualificationComponent } from '../qualification/qualification.component';
-import { QualificationData } from '../qualification-data';
+import { QualificationData } from '../interfaces/qualification-data';
 import { NgFor } from '@angular/common';
 import { FetchQualificationDataService } from '../fetch-qualification-data.service';
 

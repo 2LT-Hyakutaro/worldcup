@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { QualificationData } from './qualification-data';
+import { QualificationData } from './interfaces/qualification-data';
 import { ThisReceiver } from '@angular/compiler';
 
 @Injectable({

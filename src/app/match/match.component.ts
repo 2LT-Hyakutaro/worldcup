@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { MatchData } from '../match-data';
+import { MatchData } from '../interfaces/match-data';
 
 @Component({
   selector: 'app-match',
