@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { MatchData } from '../match-data';
 
 @Component({
   selector: 'app-match',
@@ -7,14 +8,14 @@ import { NgIf } from '@angular/common';
   template: `
      <table>
   <tr>
-    <td>{{homeTeam}}</td>
-    <td>{{game1Result[0]}}</td>
-    <td *ngIf="homeAndAway">{{game2Result[0]}}</td>
+    <td>{{matchData.homeTeam}}</td>
+    <td>{{matchData.game1Result[0]}}</td>
+    <td *ngIf="matchData.homeAndAway">{{matchData.game2Result[0]}}</td>
   </tr>
   <tr>
-    <td>{{awayTeam}}</td>
-    <td>{{game1Result[1]}}</td>
-    <td *ngIf="homeAndAway">{{game2Result[1]}}</td>
+    <td>{{matchData.awayTeam}}</td>
+    <td>{{matchData.game1Result[1]}}</td>
+    <td *ngIf="matchData.homeAndAway">{{matchData.game2Result[1]}}</td>
   </tr>
 </table> 
   `,
@@ -27,13 +28,9 @@ import { NgIf } from '@angular/common';
 })
 export class MatchComponent {
 
-  @Input() homeTeam! : string;
-  @Input() awayTeam! : string;
-  @Input() homeAndAway! : boolean;
-  @Input() game1Result! : Number[];
-  @Input() game2Result : Number[];
+  @Input() matchData : MatchData;
 
   constructor() {
-    this.game2Result = [99,99];
+    this.matchData = {homeTeam : 'XXX', awayTeam: 'YYY', homeAndAway: false, game1Result: [99,99], game2Result: [99,99]}
   }
 }

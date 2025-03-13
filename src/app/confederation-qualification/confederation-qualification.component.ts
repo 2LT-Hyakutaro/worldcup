@@ -13,7 +13,7 @@ import { MatchData } from '../match-data';
     <p>
       confederation-qualification works!
     </p>
-    <app-match [homeTeam]="this.exMatch.homeTeam" [awayTeam]="this.exMatch.awayTeam" [homeAndAway]="this.exMatch.homeAndAway" [game1Result]="this.exMatch.game1Result" [game2Result]="this.exMatch.game2Result"/>
+    <app-match [matchData]="this.exMatch"/>
   `,
   styles: ``
 })
@@ -29,6 +29,6 @@ export class ConfederationQualificationComponent {
     this.confederationName = this.route.snapshot.params['confederation'];
 
     // building a toy match fro testing
-    this.exMatch = {homeTeam : "Brazil", awayTeam : "Italy", homeAndAway : true, game1Result : [4, 0], game2Result: [0,1]};
+    this.exMatch = {homeTeam : 'Brazil', awayTeam : 'Italy', homeAndAway : true, game1Result : [4, 0], game2Result: [0,1]};
   }
 }
