@@ -1,0 +1,22 @@
+<h3> Qualification round with {{roundDetails.numberOfGroups}} groups</h3>
+
+<div class="flex-container">
+    <div class="table-wrapper" *ngFor='let roundRobinGroup of roundDetails.groups'>
+        <h3> {{roundRobinGroup.groupName}}</h3>
+        <table>
+            <tr>
+                <th>team</th>
+                <th>points</th>
+            </tr>
+            <tr *ngFor='let team of roundRobinGroup.teams'>
+                <td> {{team}}</td>
+                <td> 99 </td>
+            </tr>
+        </table>
+
+        <p> List of matches </p>
+    </div>
+
+</div>
+
+<hr>

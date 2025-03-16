@@ -1,0 +1,4 @@
+<h1> {{confederationName}} qualification of {{year}} </h1>
+<hr>
+
+<app-qualification-round *ngFor="let round of this.qualificationFormat.rounds" [roundDetails]="round"></app-qualification-round>

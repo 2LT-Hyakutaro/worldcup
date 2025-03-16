@@ -13,7 +13,6 @@ import { NgFor } from '@angular/common';
       {{tournamentYear}}
       </a>
       </nav>
-      <hr>
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./app.component.css'],
